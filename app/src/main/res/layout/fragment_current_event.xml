@@ -39,14 +39,23 @@
             android:textColor="@color/white"
             android:text="@string/Current_info_consts"
             android:textSize="16sp" />
+        <TextView
+            android:id="@+id/current_const"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/current_info"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="@string/Current_info_consts"
+            android:textSize="16sp" />
         <Button
             android:id="@+id/current_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/current_info"
+            android:layout_below="@id/current_const"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="50dp"
-            android:text="@string/info" />
+            android:text="@string/next" />
     </RelativeLayout>
 
 </FrameLayout>

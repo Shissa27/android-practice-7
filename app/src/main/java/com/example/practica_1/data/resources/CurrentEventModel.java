@@ -4,16 +4,17 @@ public class CurrentEventModel {
     private final int imageMap;
     private final String infoConstellation;
 
+
     public CurrentEventModel(int imageMap, String infoConstellation) {
         this.imageMap = imageMap;
         this.infoConstellation = infoConstellation;
     }
 
-    public int getImagePerfume() {
+    public int getCurrentMap() {
         return imageMap;
     }
 
-    public String getNamePerfume() {
+    public String getCurrentInfo() {
         return infoConstellation;
     }
 }
