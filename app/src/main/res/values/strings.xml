@@ -11,5 +11,7 @@
     <string name="find">FIND</string>
     <string name="objectlist">Список объектов</string>
     <string name="text">Text</string>
+    <string name="current_event_text">Текущее событие:</string>
+    <string name="Current_info_consts">Созведия:</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.practica_1;
+package com.example.practica_1.ui.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +19,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import com.example.practica_1.R;
 import com.example.practica_1.databinding.FragmentFirstBinding;
 import com.example.practica_1.databinding.NewmainlayoutBinding;
 

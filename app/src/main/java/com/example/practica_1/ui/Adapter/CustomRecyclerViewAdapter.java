@@ -1,4 +1,4 @@
-package com.example.practica_1;
+package com.example.practica_1.ui.Adapter;
 
 import android.content.Context;
 import android.util.Log;
@@ -11,6 +11,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.practica_1.R;
 
 import java.util.List;
 

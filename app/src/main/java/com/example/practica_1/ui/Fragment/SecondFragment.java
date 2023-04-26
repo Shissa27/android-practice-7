@@ -1,4 +1,4 @@
-package com.example.practica_1;
+package com.example.practica_1.ui.Fragment;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -7,7 +7,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.practica_1.R;
 import com.example.practica_1.databinding.FragmentSecondBinding;
+import com.example.practica_1.ui.Adapter.CustomViewListAdapter;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -38,7 +42,7 @@ public class SecondFragment extends Fragment {
             Stars.add("Звезда " + star);
         }
         Log.i("PUDGE",Stars.size()+"A");
-        CustomViewListAdapter viewListAdapter = new CustomViewListAdapter(binding.getRoot().getContext(),R.layout.vlist_orig,Stars);
+        CustomViewListAdapter viewListAdapter = new CustomViewListAdapter(binding.getRoot().getContext(), R.layout.vlist_orig,Stars);
         binding.vlist.setAdapter(viewListAdapter);
     }
     @Override
