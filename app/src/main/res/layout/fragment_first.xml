@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="16dp"
+        android:background="@color/background">
+        <ImageView
+            android:id="@+id/main_screen_image"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="75dp"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/moon"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+        <TextView
+            android:id="@+id/main_screen_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_screen_image"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:text="@string/on_screen_text"
+            android:textSize="16sp" />
+        <EditText
+            android:id="@+id/get_coordinate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_screen_text"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="@string/on_screen_text"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/get_location_first_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/get_coordinate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/find" />
+        <Button
+            android:id="@+id/get_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/get_location_first_fragment"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/info" />
+    </RelativeLayout>
+</FrameLayout>

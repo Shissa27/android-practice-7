@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/vlist_star_img"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/astra"
+        />
+    <TextView
+        android:id="@+id/vlist_text"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:textColorHint="@color/white"
+        android:text="@string/text"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_medium"
+        />
+
+</LinearLayout>
