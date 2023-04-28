@@ -4,24 +4,21 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
+import com.example.practica_1.data.repositories.CurrentEventRepository;
 import com.example.practica_1.data.resources.CurrentEventModel;
 import com.example.practica_1.data.sources.CurrentEventDataSource;
 
 import java.util.Random;
 
 public class CurrentEventViewModel extends ViewModel {
-    private final MutableLiveData<CurrentEventModel> luckyPerfume;
+    private final MutableLiveData<CurrentEventRepository> eventsRepository;
     public CurrentEventViewModel(){
-        luckyPerfume = new MutableLiveData<>(new CurrentEventModel(0, null));
+        eventsRepository = new MutableLiveData<>(new CurrentEventRepository());
     }
-    public LiveData<CurrentEventModel> getCurrentEvent(){
-        return luckyPerfume;
+    public LiveData<CurrentEventRepository> getCurrentEvent(){
+        return eventsRepository;
     }
     public void nextPartOfSky(){
-        Random random = new Random();
-        int randInt = random.nextInt(3);
-        luckyPerfume.setValue(
-                new CurrentEventModel(CurrentEventDataSource.getImage(randInt), CurrentEventDataSource.getName(randInt))
-        );
+        eventsRepository.setValue(new CurrentEventRepository());
     }
 }

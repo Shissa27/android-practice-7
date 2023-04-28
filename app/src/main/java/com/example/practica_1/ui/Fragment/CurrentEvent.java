@@ -45,8 +45,8 @@ public class CurrentEvent extends Fragment {
 
         mViewModel = new ViewModelProvider(this).get(CurrentEventViewModel.class);
         mViewModel.getCurrentEvent().observe(getViewLifecycleOwner(), currentEvent -> {
-            currentImg.setImageResource(currentEvent.getCurrentMap());
-            currentText.setText(currentEvent.getCurrentInfo());
+            currentImg.setImageResource(currentEvent.getEvent().getCurrentMap());
+            currentText.setText(currentEvent.getEvent().getCurrentInfo());
         });
 
         currentBtn.setOnClickListener(new View.OnClickListener() {
