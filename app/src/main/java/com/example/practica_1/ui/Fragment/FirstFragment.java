@@ -26,6 +26,7 @@ public class FirstFragment extends Fragment {
         FragmentFirstBinding binding = FragmentFirstBinding.inflate(getLayoutInflater());
         goFind = binding.getLocationFirstFragment;
         goInfo = binding.getInfo;
+        goMap = binding.getMap;
         goCurrentEvent = binding.getCurrent;
         FragmentManager fragmentManager = getParentFragmentManager();
         goFind.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +36,16 @@ public class FirstFragment extends Fragment {
                 editText = binding.getCoordinate;
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container_view, new SecondFragment());
+                fragmentTransaction.commit();
+            }
+        });
+        goMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.i(TAG,"BTN2");
+                editText = binding.getCoordinate;
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container_view, new MapFragment());
                 fragmentTransaction.commit();
             }
         });
