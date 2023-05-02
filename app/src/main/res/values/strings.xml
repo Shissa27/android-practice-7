@@ -19,5 +19,6 @@
     <string name="base_region">base region</string>
     <string name="europe">Europe</string>
     <string name="asia">Asia</string>
+    <string name="australia">Australia</string>
 
 </resources>

@@ -42,13 +42,19 @@ public class MapFragment extends Fragment {
         binding.buttonAppSpec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mapViewModel.addNameAppSpecific("Europe");
+                mapViewModel.addRegionAppSpecific("Europe");
             }
         });
         binding.buttonExternal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mapViewModel.addRegionExternalStorage("Asia");
+            }
+        });
+        binding.buttonShared.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mapViewModel.addRegionExternalStorage("Australia");
             }
         });
     }

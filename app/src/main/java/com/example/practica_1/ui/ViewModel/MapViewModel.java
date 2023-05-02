@@ -12,10 +12,17 @@ public class MapViewModel extends AndroidViewModel {
         super(application);
         mRepository = new MapRepository(application);
     }
-    public void addNameAppSpecific(String region){
-        mRepository.addNameAppSpecific(region);
+    public void addRegionAppSpecific(String region){
+        mRepository.addRegionAppSpecific(region);
     }
     public void addRegionExternalStorage(String region){
         mRepository.addRegionExternalStorage(region);
+    }
+    public void addRegionSharedPreferences(String region) {
+        mRepository.addRegionSharedPreferences(region);
+    }
+
+    public String getRegion(String region) {
+        return mRepository.getRegion(region);
     }
 }
