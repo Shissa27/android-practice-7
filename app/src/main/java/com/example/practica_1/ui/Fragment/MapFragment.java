@@ -45,5 +45,11 @@ public class MapFragment extends Fragment {
                 mapViewModel.addNameAppSpecific("Europe");
             }
         });
+        binding.buttonExternal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mapViewModel.addRegionExternalStorage("Asia");
+            }
+        });
     }
 }

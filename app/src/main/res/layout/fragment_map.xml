@@ -33,8 +33,14 @@
         android:id="@+id/button_app_spec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Europe"
+        android:text="@string/europe"
         android:layout_marginTop="450dp"/>
+    <Button
+        android:id="@+id/button_external"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/asia"
+        android:layout_marginTop="500dp"/>
 
 
 </FrameLayout>

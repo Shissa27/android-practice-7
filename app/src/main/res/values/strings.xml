@@ -17,5 +17,7 @@
     <string name="current_events">Current events</string>
     <string name="region">Region:</string>
     <string name="base_region">base region</string>
+    <string name="europe">Europe</string>
+    <string name="asia">Asia</string>
 
 </resources>

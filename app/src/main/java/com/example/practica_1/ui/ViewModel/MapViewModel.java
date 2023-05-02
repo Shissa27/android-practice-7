@@ -15,4 +15,7 @@ public class MapViewModel extends AndroidViewModel {
     public void addNameAppSpecific(String region){
         mRepository.addNameAppSpecific(region);
     }
+    public void addRegionExternalStorage(String region){
+        mRepository.addRegionExternalStorage(region);
+    }
 }
