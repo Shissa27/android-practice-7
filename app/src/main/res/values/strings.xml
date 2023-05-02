@@ -15,5 +15,7 @@
     <string name="Current_info_consts">Созведия:</string>
     <string name="next">Next</string>
     <string name="current_events">Current events</string>
+    <string name="region">Region:</string>
+    <string name="base_region">base region</string>
 
 </resources>

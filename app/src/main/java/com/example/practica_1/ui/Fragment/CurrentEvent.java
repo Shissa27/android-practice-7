@@ -44,6 +44,7 @@ public class CurrentEvent extends Fragment {
         currentText = view.findViewById(R.id.current_const);
 
         mViewModel = new ViewModelProvider(this).get(CurrentEventViewModel.class);
+        mViewModel = new ViewModelProvider(this).get(CurrentEventViewModel.class);
         mViewModel.getCurrentEvent().observe(getViewLifecycleOwner(), currentEvent -> {
             currentImg.setImageResource(mViewModel.getI().getCurrentMap());
             currentText.setText(mViewModel.getI().getCurrentInfo());
@@ -59,7 +60,7 @@ public class CurrentEvent extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = new ViewModelProvider(this).get(CurrentEventViewModel.class);
+
         // TODO: Use the ViewModel
     }
 

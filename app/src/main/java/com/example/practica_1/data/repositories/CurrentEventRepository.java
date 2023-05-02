@@ -13,8 +13,5 @@ public class CurrentEventRepository {
     public CurrentEventModel[] getEvents() {
         return events;
     }
-    public void changeCur(){
-        cur = (cur+1) % 3;
-    }
 
 }

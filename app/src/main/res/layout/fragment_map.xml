@@ -6,16 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".ui.Fragment.MapFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="436dp"
-        android:layout_height="768dp"
-        android:src="@drawable/asrtomap" />
+        android:layout_width="234dp"
+        android:layout_height="347dp"
+        android:src="@drawable/asrtomap"
+        android:layout_marginStart="75dp"/>
+
+    <TextView
+        android:id="@+id/region_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/region"
+        android:layout_marginTop="350dp"
+        android:textSize="@dimen/text_size_medium"/>
+    <TextView
+        android:id="@+id/regin_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/base_region"
+        android:layout_marginTop="400dp"
+        android:textSize="@dimen/text_size_medium"/>
+
+    <Button
+        android:id="@+id/button_app_spec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Europe"
+        android:layout_marginTop="450dp"/>
+
 
 </FrameLayout>
