@@ -20,7 +20,8 @@ public class ExternalStorageRegionDataSource {
         this.context = context;
         if (ContextCompat.checkSelfPermission(context, android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_GRANTED) {
-            external_storage_file = new File(Environment.getExternalStorageDirectory(), "region_2.txt");
+            external_storage_file = new File(Environment.getExternalStorageDirectory() +"/"+Environment.DIRECTORY_DOWNLOADS, "region_2.txt");
+
         }
         else {
             ActivityCompat.requestPermissions((Activity)context, new String[]

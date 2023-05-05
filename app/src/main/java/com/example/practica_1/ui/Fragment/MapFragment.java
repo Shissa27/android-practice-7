@@ -54,7 +54,7 @@ public class MapFragment extends Fragment {
         binding.buttonShared.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mapViewModel.addRegionExternalStorage("Australia");
+                mapViewModel.addRegionSharedPreferences("Australia");
             }
         });
     }
