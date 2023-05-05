@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Fragment.InfoFragment">
+
+
+    <TextView
+        android:id="@+id/info_fragment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/base"
+        android:layout_marginTop="400dp"/>
+    <TextView
+        android:id="@+id/info_fragment_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/base"
+        android:layout_marginTop="450dp"/>
+
+    <Button
+        android:id="@+id/info_fragment_btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new" />
+    <Button
+        android:id="@+id/info_fragment_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/set_new"
+        android:layout_marginTop="50dp"/>
+
+</FrameLayout>

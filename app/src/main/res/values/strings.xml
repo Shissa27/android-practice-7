@@ -20,5 +20,8 @@
     <string name="europe">Europe</string>
     <string name="asia">Asia</string>
     <string name="australia">Australia</string>
+    <string name="base">Base</string>
+    <string name="add_new">Add new</string>
+    <string name="set_new">set new</string>
 
 </resources>
