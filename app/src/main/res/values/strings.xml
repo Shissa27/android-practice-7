@@ -23,5 +23,6 @@
     <string name="base">Base</string>
     <string name="add_new">Add new</string>
     <string name="set_new">set new</string>
+    <string name="amount_of_stars">Amount of stars:</string>
 
 </resources>

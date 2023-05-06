@@ -2,6 +2,8 @@ package com.example.practica_1.ui.Fragment;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
@@ -28,13 +30,8 @@ public class InfoFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         infoViewModel = new ViewModelProvider(this).get(InfoViewModel.class);
-        binding.infoFragmentBtn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                StarModel star = new StarModel();
-                infoViewModel.insert(star);
-            }
-        });
+        infoViewModel.add();
+
     }
 
     @Override
@@ -42,5 +39,28 @@ public class InfoFragment extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentInfoBinding.inflate(inflater, container, false);
         return binding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        infoViewModel.getAllStars().observe(getViewLifecycleOwner(), currentEvent -> {
+            binding.infoFragmentName.setText("Name: " + infoViewModel.getNextStarName());
+            binding.infoFragmentType.setText("Type: " + infoViewModel.getNextStarType());
+            binding.infoFragmentAmount.setText("Amount of stars" + infoViewModel.getAmount());
+        });
+        binding.infoFragmentBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                StarModel star = new StarModel("a543","F");
+                infoViewModel.insert(star);
+            }
+        });
+        binding.infoFragmentBtn1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                infoViewModel.Random();
+            }
+        });
     }
 }

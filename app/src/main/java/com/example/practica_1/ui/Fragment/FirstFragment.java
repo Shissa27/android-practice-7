@@ -55,7 +55,7 @@ public class FirstFragment extends Fragment {
                 Log.i(TAG,"BTN2");
                 editText = binding.getCoordinate;
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container_view, new ThirdFragment());
+                fragmentTransaction.replace(R.id.fragment_container_view, new InfoFragment());
                 fragmentTransaction.commit();
             }
         });

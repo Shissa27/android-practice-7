@@ -10,25 +10,34 @@
         android:id="@+id/info_fragment_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/base"
-        android:layout_marginTop="400dp"/>
+        android:text=""
+        android:layout_marginTop="400dp"
+        android:textSize="@dimen/text_size_medium"/>
     <TextView
         android:id="@+id/info_fragment_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/base"
-        android:layout_marginTop="450dp"/>
+        android:layout_marginTop="450dp"
+        android:textSize="@dimen/text_size_medium"/>
+    <TextView
+        android:id="@+id/info_fragment_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount_of_stars"
+        android:layout_marginTop="350dp"
+        android:textSize="@dimen/text_size_medium"/>
 
     <Button
         android:id="@+id/info_fragment_btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/add_new" />
+        android:text="@string/next" />
     <Button
         android:id="@+id/info_fragment_btn2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/set_new"
+        android:text="@string/add_new"
         android:layout_marginTop="50dp"/>
 
 </FrameLayout>
